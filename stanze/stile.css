@@ -1,0 +1,46 @@
+/* stile condiviso delle stanze */
+body {
+  max-width: 34em;
+  margin: 5em auto;
+  padding: 0 1.2em;
+  font-family: Georgia, serif;
+  line-height: 1.7;
+  color: #222;
+  background: #faf9f6;
+}
+h1 {
+  font-weight: normal;
+  font-size: 1.3em;
+  letter-spacing: 0.08em;
+}
+.numero {
+  color: #999;
+  font-size: 0.85em;
+  letter-spacing: 0.15em;
+}
+.poema {
+  margin: 2.5em 0;
+  padding-left: 1.2em;
+  border-left: 1px solid #ccc;
+  white-space: pre-line;
+  font-style: italic;
+}
+.porte {
+  margin-top: 4em;
+  padding-top: 1em;
+  border-top: 1px solid #ddd;
+  font-size: 0.95em;
+}
+.porte p { margin: 0.4em 0; }
+.nota {
+  color: #777;
+  font-style: italic;
+  font-size: 0.9em;
+}
+a { color: inherit; }
+@media (prefers-color-scheme: dark) {
+  body { background: #1a1a1a; color: #ddd; }
+  .numero, .nota { color: #999; }
+  .poema { border-left-color: #555; }
+  .porte { border-top-color: #444; }
+}
