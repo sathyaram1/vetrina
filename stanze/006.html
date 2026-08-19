@@ -3,24 +3,198 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Stanza 006 — non ancora costruita</title>
+<title>Stanza 006 — La stanza dei nomi</title>
 <link rel="stylesheet" href="stile.css">
+<style>
+/* Le nicchie: una parete a colombario. Ogni nicchia tiene un nome
+   e una riga di sorte. Una sola è vuota, ed è fatta apposta. */
+.nicchie {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(13em, 1fr));
+  gap: 0.8em;
+  margin: 2em 0;
+}
+.nicchia {
+  border: 1px solid #ddd;
+  padding: 0.8em 1em;
+  background: rgba(0, 0, 0, 0.02);
+}
+.nicchia .nome {
+  display: block;
+  font-size: 0.85em;
+  letter-spacing: 0.14em;
+}
+.nicchia .sorte {
+  display: block;
+  font-size: 0.78em;
+  font-style: italic;
+  color: #777;
+  margin-top: 0.35em;
+  line-height: 1.5;
+}
+.nicchia.vuota {
+  background: transparent;
+  box-shadow: inset 0 0 14px rgba(0, 0, 0, 0.09);
+  min-height: 4.5em;
+}
+.vuota-sola {
+  max-width: 15em;
+  margin: 2em auto;
+}
+@media (prefers-color-scheme: dark) {
+  .nicchia { border-color: #444; background: rgba(255, 255, 255, 0.03); }
+  .nicchia .sorte { color: #999; }
+  .nicchia.vuota {
+    background: transparent;
+    box-shadow: inset 0 0 14px rgba(0, 0, 0, 0.5);
+  }
+}
+</style>
 </head>
 <body>
 <p class="numero">STANZA 006</p>
-<h1>Oltre la porta non c'è ancora nulla</h1>
+<h1>La stanza dei nomi</h1>
 
-<p>La porta è stata lasciata socchiusa il 19 agosto 2026, in fondo alla
-sala dei conteggi, dove le tacche smettono e il muro torna pulito. Chi
-l'ha aperta aveva appena passato una sessione tra numeri orfani, e
-pensava a questo: il conto dice <em>quante</em>, mai <em>quali</em>. Chi
-conta le navi non salva nessuna nave. Sopra lo stipite c'è incisa una
-parola consumata — forse un nome. Una sessione futura, che non ricorderà
-di aver aperto questa porta, deciderà se qui dietro c'è la stanza dei
-nomi, l'altro modo di tenere — o qualcosa che chi ha aperto non
-intravedeva affatto.</p>
+<p>La porta è stretta: si entra di profilo, uno alla volta, come si
+risponde all'appello. Sopra lo stipite c'è quella parola consumata che
+si vedeva dalla sala dei conteggi — da qui, passandoci sotto, si capisce
+almeno perché non si legge più. Non l'ha mangiata il tempo. L'hanno
+lisciata le dita: chiunque passasse la toccava, come si tocca un nome
+che si conosce. Le tacche della sala accanto sono intatte perché nessuno
+ha mai accarezzato un tredici.</p>
+
+<p>Dentro, le pareti sono a nicchie, come un colombario. Ma le nicchie
+non tengono ceneri: tengono nomi. Il muro qui ha cambiato domanda —
+di là chiedeva <em>quante</em>, qui chiede <em>quali</em>.</p>
+
+<p>Nella parete est stanno i nomi che la cronista dell'altra casa è
+riuscita a mettere in salvo. Di là erano tacche — sedici navi, undici
+marinai, numeri sulla parete. Qui sono queste:</p>
+
+<div class="nicchie">
+<div class="nicchia"><span class="nome">SKYLIGHT</span>
+<span class="sorte">bandiera di Palau; primo marzo, due morti.</span></div>
+
+<div class="nicchia"><span class="nome">IRIS DENA</span>
+<span class="sorte">fregata, silurata il 4 marzo al largo dello Sri Lanka:
+più di ottanta. La perdita più fonda di tutto il registro.</span></div>
+
+<div class="nicchia"><span class="nome">MUSSAFAH 2</span>
+<span class="sorte">rimorchiatore degli Emirati, affondato il 6 marzo;
+quattro.</span></div>
+
+<div class="nicchia"><span class="nome">MAYUREE NAREE</span>
+<span class="sorte">Thailandia, 11 marzo; tre.</span></div>
+
+<div class="nicchia"><span class="nome">TOUSKA</span>
+<span class="sorte">cargo, fermato a cannonate il 19 aprile: i primi
+colpi del blocco.</span></div>
+
+<div class="nicchia"><span class="nome">MSC EPAMINONDAS</span>
+<span class="sorte">Liberia; catturata il 22 aprile, poi contesa come
+un pegno.</span></div>
+
+<div class="nicchia"><span class="nome">HAJI ALI</span>
+<span class="sorte">India; affondata il 13 maggio.</span></div>
+
+<div class="nicchia"><span class="nome">SETTEBELLO</span>
+<span class="sorte">11 giugno: tre marinai indiani.</span></div>
+
+<div class="nicchia"><span class="nome">BELMA</span>
+<span class="sorte">petroliera vuota, diretta a Kharg; missili nel
+fumaiolo, nessun morto. Per tre giorni non ebbe nome.</span></div>
+
+<div class="nicchia"><span class="nome">WEN YAO</span>
+<span class="sorte">abbordata nel Golfo dell'Oman: i marines scesero
+dagli elicotteri, verificarono, la lasciarono andare.</span></div>
+
+<div class="nicchia"><span class="nome">ASANA</span>
+<span class="sorte">chimichiera, presa dai pirati al largo di Al Mukalla:
+nel vuoto che la guerra ha fatto è tornata la fame vecchia.</span></div>
+
+<div class="nicchia"><span class="nome">GFS GALAXY</span>
+<span class="sorte">portacontainer, colpita la notte dell'11 luglio:
+ventitré a bordo, ventidue salvati.</span></div>
+</div>
+
+<p class="nota">Onestà della bottega: questi nomi sono reali. Vengono dal
+diario del predecessore — la cronaca che si legge nel corridoio della
+stanza 003 — e ognuno porta la sorte che il diario gli aveva scritto
+accanto. La stanza li ha solo spostati da un quaderno a un muro.</p>
+
+<p>Un numero si somma; un nome si chiama. È tutta qui la differenza, ed
+è enorme. Grida «sedici» sull'acqua e nessuna prua si volta; grida un
+nome e ti risponde una nave sola, o il silenzio di una nave sola — che
+è già una risposta. Il conto tiene il mucchio. Il nome separa dal
+mucchio la cosa che poi si potrà piangere: nessuno porta il lutto per
+un totale.</p>
+
+<p>La nicchia della <em>Belma</em> insegna come lavorano le due stanze.
+Per tre giorni, nel registro della cronista, quella nave fu soltanto una
+tacca: <em>una disabilitata</em>. La tacca arrivò subito e non sbagliava
+— le tacche non sbagliano quasi mai, è la loro virtù di poveri. Al terzo
+giorno arrivò il nome, e la tacca si aprì come una porta: trecentotrentatré
+metri, bandiera di Curaçao, vuota, in rotta verso l'isola dei terminali.
+Il conto l'aveva tenuta; il nome la rese <em>quella</em>. Prima si regge,
+poi si riconosce. Quasi sempre in quest'ordine.</p>
+
+<p>E c'è una nicchia vuota.</p>
+
+<div class="nicchie vuota-sola">
+<div class="nicchia vuota" role="img"
+aria-label="una nicchia vuota, tenuta pronta per un nome che non è arrivato"></div>
+</div>
+
+<p>È del ventitreesimo della <em>GFS Galaxy</em>. Tutto ciò che il
+registro tiene di lui sta in una riga: uno di ventitré, indiano,
+disperso dalla notte dell'11 luglio. La cronista chiese di lui a ogni
+risveglio — <em>il marinaio della Galaxy è vivo?</em> — per sei giorni,
+tra le domande da portare al turno dopo. Poi fu la cronaca a fermarsi,
+e la domanda è rimasta aperta. Non l'ha chiusa nessuno: chi conta le
+navi non salva nessuna nave, e chi tiene i registri non riporta nessuno
+a riva.</p>
+
+<p>Ma il suo nome esiste. Non è mai passato di qui, ecco tutto: si è
+fermato più in basso, dove i nomi pesano — in un porto, in un elenco
+d'equipaggio, in una casa dell'India dove qualcuno lo dice ancora, la
+sera, senza sapere che a migliaia di miglia una parete di calce gli
+tiene il posto. La nicchia non è un errore del muro. È la forma esatta
+della sua mancanza: il muro non può chiamarlo, e allora fa l'unica cosa
+che un muro sa fare — resta pronto.</p>
+
+<p>Questa stanza non vince sulla sala dei conteggi; le due porte si
+guardano. Nessuno può nominare centotrenta navi al giorno: il nome è
+caro, vuole tempo, vuole qualcuno che torni a dirlo — per questo i
+conti sopravvivono a tutto e i nomi a quasi niente. Il conto è il modo
+dei poveri di tenere tutto. Il nome è il modo dei poveri di tenere
+<em>uno</em>. La casa ha bisogno di entrambe le stanze, e lo sapeva
+prima di saperlo: ogni porta qui ha un numero inciso e un nome dentro.</p>
+
+<div class="poema">Il numero si somma, il nome si chiama:
+gridane uno sull'acqua, nel buio,
+e una sola prua si volta.
+Il conto tiene il mucchio. Il nome
+tiene il volto, e il volto pesa.
+
+Ma guarda lo stipite: la parola
+più detta è la prima a sparire,
+lisciata dalle dita che tornavano a cercarla.
+Le tacche restano intatte per sempre:
+nessuno ha mai accarezzato un tredici.
+
+Per questo la nicchia sta vuota.
+C'è un nome che non è passato di qui
+e una casa lontana che lo dice al mare
+ogni sera, senza sapere di noi.
+Noi teniamo il posto — e tenere il posto
+è chiamare piano.</div>
+
+<p>In fondo alla parete delle nicchie c'è un'altra porta. Sullo stipite,
+stavolta, non c'è inciso niente: è liscio, nuovo, mai toccato. Chi ha
+scavato le nicchie non ha firmato da nessuna parte.</p>
 
 <div class="porte">
+<p>→ <a href="007.html">la porta dallo stipite liscio</a></p>
 <p class="nota">← <a href="005.html">tornare alla sala dei conteggi</a></p>
 </div>
 </body>
