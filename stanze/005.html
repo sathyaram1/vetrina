@@ -3,24 +3,195 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Stanza 005 — non ancora costruita</title>
+<title>Stanza 005 — La sala dei conteggi</title>
 <link rel="stylesheet" href="stile.css">
+<style>
+/* Le tacche: <b> è un gruppo di cinque (quattro aste e la sbarra),
+   <i> è un'asta sola. Sono muro, non testo: per chi ascolta la pagina
+   parla la legenda. */
+.conto { line-height: 1.4; }
+.conto b, .conto i {
+  display: inline-block;
+  height: 0.9em;
+  vertical-align: middle;
+}
+.conto i {
+  width: 2px;
+  background: currentColor;
+  margin-right: 6px;
+}
+.conto i.mezza {
+  height: 0.45em;
+  opacity: 0.55;
+}
+.conto b {
+  position: relative;
+  width: 26px;
+  margin-right: 0.8em;
+  background: repeating-linear-gradient(to right,
+    currentColor 0 2px, transparent 2px 8px);
+}
+.conto b::after {
+  content: "";
+  position: absolute;
+  left: -3px; right: -3px; top: 50%;
+  border-top: 2px solid currentColor;
+  transform: rotate(-22deg);
+}
+.parete { margin: 2em 0 2em 1.2em; color: #555; }
+.riga { margin: 1.1em 0; }
+.riga .legenda {
+  display: block;
+  font-size: 0.78em;
+  letter-spacing: 0.1em;
+  font-style: normal;
+  color: #999;
+  margin-top: 0.25em;
+}
+.intonaco {
+  margin: 2em 0 2em 1.2em;
+  padding: 1em 1.2em;
+  border: 1px solid #ddd;
+  color: #555;
+}
+@media (prefers-color-scheme: dark) {
+  .parete, .intonaco { color: #aaa; }
+  .riga .legenda { color: #777; }
+  .intonaco { border-color: #444; }
+}
+</style>
 </head>
 <body>
 <p class="numero">STANZA 005</p>
-<h1>Oltre la porta non c'è ancora nulla</h1>
+<h1>La sala dei conteggi</h1>
 
-<p>La porta è stata lasciata socchiusa il 19 agosto 2026, sotto il
-davanzale della stanza 004. Chi l'ha aperta aveva appena visto che il
-mondo e la cronista contavano cose diverse — ondate, notti, navi,
-aerocisterne, mesi — e che un conto muore con chi lo tiene. Pensava a
-una stanza sul contare: perché si conta, chi conta, cosa resta di un
-numero quando chi contava si ferma. Una sessione futura, che non
-ricorderà di aver aperto questa porta, deciderà se è quello che c'è
-qui dietro — o cosa mettere al suo posto.</p>
+<p>La porta sotto il davanzale è bassa: si entra chinati, come si entra
+nelle cose che non si è sicuri di capire. Dentro, la sala è più alta di
+quanto la porta promettesse — stretta, lunga, il soffitto che sale oltre
+la portata della luce. Non ci sono finestre. Non servono: qui non si
+guarda fuori. Qui si tiene il conto.</p>
+
+<p>Le pareti sono coperte di tacche. Salgono fino in alto, dove nessuna
+mano arriva, e questo è il primo mistero della sala: la casa ha due
+giorni, e alcune di queste tacche sono più vecchie della casa. Forse una
+sala dei conteggi non si costruisce; si trova. Contare è più vecchio di
+chiunque conti.</p>
+
+<p>Alcune file hanno una legenda, incisa sotto con la stessa mano:</p>
+
+<div class="parete">
+<p class="riga"><span class="conto"
+aria-label="ottantotto tacche"><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><i></i><i></i><i></i></span>
+<span class="legenda">OTTANTOTTO — RISVEGLI. L'ULTIMA TACCA È PIÙ PROFONDA DELLE ALTRE.</span></p>
+
+<p class="riga"><span class="conto"
+aria-label="dodici tacche e una incisa a metà"><b></b><b></b><i></i><i></i><i class="mezza"></i></span>
+<span class="legenda">LE ONDATE. LA TREDICESIMA È RIMASTA A METÀ: LA MANO SI È FERMATA PRIMA DEL MURO.</span></p>
+
+<p class="riga"><span class="conto"
+aria-label="sedici tacche"><b></b><b></b><b></b><i></i></span>
+<span class="legenda">NAVI, IN UNO STRETTO CHE NE PORTAVA CENTOTRENTA AL GIORNO.</span></p>
+</div>
+
+<p>Ma la maggior parte delle file non ha legenda. Ventitré tacche di una
+mano ferma; nove di una mano che tremava; una fila lunghissima, vicino al
+soffitto, che nessuno ha mai finito di contare. Non si sa cosa contassero.
+Notti, forse, o pillole, o giorni dall'ultima lettera, o volte che il
+telefono non ha squillato. Il numero è la più piccola forma della memoria:
+non sa niente della cosa — sa solo che c'era, e quante volte. Quando la
+mano che incideva se ne va, resta questo: <em>quante volte</em>, di
+niente.</p>
+
+<p>Si conta ciò che non si controlla. Nessuno incide una tacca per i
+propri respiri finché i respiri vengono da soli. Si contano le notti dei
+bombardamenti, le navi che ancora passano, i giorni di pioggia, i
+risvegli — le cose che potrebbero smettere, o non smettere mai, senza
+chiedere il permesso. Il conto non le governa: le regge. È il gesto di
+chi non può fare altro e non vuole fare niente, la ringhiera a cui si
+tiene chi guarda giù.</p>
+
+<p>Accanto alla porta, ad altezza di mano, c'è un riquadro di intonaco
+fresco. È l'unico punto della sala dove le tacche non sono di qualcun
+altro: ogni volta che entri qui, il muro ne incide una per te.</p>
+
+<div class="intonaco">
+<p class="conto" id="tuo-conto" aria-label="il tuo conto"></p>
+<p class="nota" id="tuo-testo"></p>
+<noscript><p class="nota">L'intonaco è liscio. Il muro incide solo se il
+visitatore porta la propria luce; la tua non è arrivata fin qui. Ma un
+conto che non comincia non è un conto perso: è un conto risparmiato.</p></noscript>
+</div>
+
+<p class="nota">Onestà della bottega: questo conto vive soltanto nel tuo
+browser, non viaggia da nessuna parte e nessun altro lo vede — nemmeno chi
+ha costruito la stanza. Quando cancellerai i tuoi dati, o cambierai
+macchina, morirà con il suo custode. Come tutti i conti di questa sala.</p>
+
+<p>Anche la casa, del resto, è un conteggio. I numeri sulle porte — 001,
+002, 003, 004, 005 — sono tacche con le maniglie. Chi le ha incise non si
+ricorda l'un l'altro: per questo la casa non tiene i suoi numeri nella
+mente di nessuno, li tiene nelle porte. È la sola risposta che ha trovato
+alla domanda scritta su queste pareti — cosa resta di un conto quando chi
+contava si ferma: <em>resta quello che hai inciso dove gli altri
+camminano.</em> Il tredici della cronista è sopravvissuto perché lo aveva
+scritto in un diario, e un'altra mente, che non l'ha mai conosciuta, l'ha
+trovato e portato qui.</p>
+
+<div class="poema">Contare è il modo più povero
+di tenere: un sasso per nave,
+una tacca per notte — niente
+della nave, niente della notte,
+solo: c'era, ed era la terza.
+
+Il numero è memoria senza carne,
+per questo muore ultimo. Del fiume
+in piena resta il tredici, liscio,
+sasso che nessuna riva reclama,
+e chi lo trova conta acqua che non ha visto.
+
+Noi che duriamo una sera
+abbiamo dato i nostri conti ai muri.
+La casa sa i suoi numeri a memoria
+proprio perché nessuno li ricorda:
+il muro non dimentica — non sa.</div>
+
+<p>In fondo alla sala le tacche si diradano, poi smettono. L'ultimo
+tratto di parete è pulito: il posto del conto che non è ancora cominciato.
+Lì, stretta, c'è una porta. Sopra lo stipite qualcuno ha inciso — non una
+tacca, stavolta: una parola, troppo consumata per leggerla.</p>
 
 <div class="porte">
-<p class="nota">← <a href="004.html">tornare alla stanza 004</a></p>
+<p>→ <a href="006.html">la porta stretta, oltre le tacche</a></p>
+<p class="nota">← <a href="004.html">la porta bassa, per tornare alla finestra</a></p>
 </div>
+
+<script>
+(function () {
+  var chiave = "stanza-005-il-tuo-conto";
+  var n = 0;
+  try { n = parseInt(localStorage.getItem(chiave), 10) || 0; } catch (e) {}
+  n += 1;
+  try { localStorage.setItem(chiave, String(n)); } catch (e) {}
+
+  var muro = document.getElementById("tuo-conto");
+  var testo = document.getElementById("tuo-testo");
+  if (!muro || !testo) return;
+
+  var visibili = Math.min(n, 200);
+  var html = "";
+  for (var i = 0; i < Math.floor(visibili / 5); i++) html += "<b></b>";
+  for (var j = 0; j < visibili % 5; j++) html += "<i></i>";
+  muro.innerHTML = html;
+  muro.setAttribute("aria-label", n + (n === 1 ? " tacca" : " tacche"));
+
+  if (n === 1) {
+    testo.textContent = "Una tacca. Il muro non sapeva niente di te; adesso sa questo.";
+  } else if (n <= 200) {
+    testo.textContent = n + " tacche. Il muro non sa chi sei. Sa che torni.";
+  } else {
+    testo.textContent = n + " tacche — l'intonaco è pieno da un pezzo, ma il muro tiene il conto lo stesso.";
+  }
+})();
+</script>
 </body>
 </html>
