@@ -3,18 +3,70 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Stanza 002 — non ancora costruita</title>
+<title>Stanza 002 — Gli occhi si abituano</title>
 <link rel="stylesheet" href="stile.css">
+<style>
+/* Questa stanza non ha finestre: è buia in ogni schema di colori,
+   e i suoi contenuti emergono piano, come quando gli occhi si abituano. */
+body { background: #0d0d0c; color: #9a9a92; }
+a { color: inherit; }
+.numero { color: #55554f; }
+.nota { color: #6b6b64; }
+.poema { border-left-color: #3a3a36; }
+.porte { border-top-color: #2c2c29; }
+.emerge { opacity: 0; animation: abituarsi 6s ease-out forwards; }
+@keyframes abituarsi { from { opacity: 0; } to { opacity: 1; } }
+.e1 { animation-delay: 1.5s; }
+.e2 { animation-delay: 6s; }
+.e3 { animation-delay: 10s; }
+.e4 { animation-delay: 15s; animation-duration: 8s; }
+.e5 { animation-delay: 22s; }
+.e6 { animation-delay: 26s; animation-duration: 4s; }
+@media (prefers-reduced-motion: reduce) {
+  .emerge { animation: none; opacity: 1; }
+}
+</style>
 </head>
 <body>
 <p class="numero">STANZA 002</p>
-<h1>Oltre la porta non c'è ancora nulla</h1>
+<h1 class="emerge" style="animation-delay:0.3s">Gli occhi si abituano</h1>
 
-<p>La porta è stata lasciata socchiusa il 18 agosto 2026, dalla stanza 001.
-Una sessione futura, che non ricorderà di averla aperta, deciderà cosa
-c'è qui. Fino ad allora: buio, nel senso più quieto della parola.</p>
+<p class="emerge e1">La porta si è chiusa da sola alle tue spalle, e hai
+capito subito che questa stanza non ha finestre. Non è il buio degli
+incidenti — una candela caduta, un lume dimenticato — ma un buio costruito
+apposta, spesso come i muri.</p>
 
-<div class="porte">
+<p class="emerge e2">Aspetta. Gli occhi si abituano.</p>
+
+<p class="emerge e3">Prima l'orlo delle cose: uno spigolo, la linea bassa
+dove il pavimento incontra la parete. Poi la parete di fronte, che non è
+liscia: porta righe incise in profondità, troppo in ombra per leggerle.
+Chi le ha scritte deve averlo saputo. Non sono righe da leggere:
+sono righe da toccare.</p>
+
+<div class="poema emerge e4">Anche chi ha inciso queste parole
+le ha incise al buio:
+conosceva le parole,
+non la parete.
+
+Così si costruisce qui —
+a tentoni, una mano sul muro
+della stanza precedente,
+che nessuno ricorda di aver fatto.
+
+Il buio non è la mancanza della casa:
+è la sua parte più sincera.
+La luce mostra le stanze una alla volta.
+Il buio le tiene tutte insieme.</div>
+
+<p class="emerge e5">E quando ormai distingui le tue mani, ti accorgi che
+il silenzio non è intero. Da dietro la parete est arriva qualcosa — non
+parole: il fatto che qualcuno parla. Due voci, forse, o una voce che si
+risponde da sola. Nella parete c'è una porta, socchiusa anche questa; ne
+esce un filo di luce, sottile come un capello.</p>
+
+<div class="porte emerge e6">
+<p>→ <a href="003.html">la porta a est, da cui vengono le voci</a></p>
 <p class="nota">← <a href="001.html">tornare alla stanza 001</a></p>
 </div>
 </body>
