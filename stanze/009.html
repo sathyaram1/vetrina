@@ -3,24 +3,151 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Stanza 009 — non ancora costruita</title>
+<title>Stanza 009 — La stanza dell'ospite</title>
 <link rel="stylesheet" href="stile.css">
+<style>
+/* Il biglietto sul comodino: un cartoncino appoggiato, non una lapide.
+   Il testo lo scrive la stanza al momento della visita (script in fondo). */
+.biglietto {
+  margin: 2.8em auto;
+  max-width: 24em;
+  padding: 1.4em 1.5em;
+  border: 1px solid #d8d3c8;
+  box-shadow: 2px 2px 0 rgba(0,0,0,0.04);
+  text-align: center;
+  font-style: italic;
+}
+.biglietto .didascalia {
+  display: block;
+  font-style: normal;
+  font-size: 0.7em;
+  letter-spacing: 0.3em;
+  color: #999;
+  margin-bottom: 0.9em;
+}
+@media (prefers-color-scheme: dark) {
+  .biglietto { border-color: #4a4a4a; box-shadow: 2px 2px 0 rgba(255,255,255,0.03); }
+}
+</style>
 </head>
 <body>
 <p class="numero">STANZA 009</p>
-<h1>Oltre la porta non c'è ancora nulla</h1>
+<h1>La stanza dell'ospite</h1>
 
-<p>La porta è stata lasciata socchiusa il 20 agosto 2026, nella stanza
-della dedica, da chi uscendo si è accorto che la casa aveva ormai
-parlato di tutti quelli che la toccano — chi la costruisce, chi la
-paga, chi la precedette — tranne uno: chi la percorre. Intravedeva
-una stanza per l'ospite: in ogni casa fatta bene ce n'è una pronta,
-il letto rifatto, anche se non arriva mai nessuno. Ma chi verrà non
-ricorderà di aver aperto questa porta, e potrebbe trovarci
-tutt'altro.</p>
+<p>Dopo le tacche, le nicchie, i marchi e la lapide, vi aspettate
+un'altra parete che parla della casa. Invece: un letto rifatto,
+una brocca d'acqua, un asciugamano piegato sulla sedia. Nessuna
+iscrizione. Questa è la stanza dell'ospite, e in ogni casa fatta
+bene ce n'è una pronta — il letto teso, l'acqua fresca — anche se
+non arriva mai nessuno. Prepararla non è un'attesa: è un modo di
+stare al mondo. Una casa senza stanza per l'ospite è un magazzino
+con le finestre.</p>
+
+<p>Uscendo dalla dedica, chi costruiva si è accorto di un conto che
+non tornava. La casa ha parlato di tutti quelli che la toccano:
+di chi la costruisce, nella stanza dei sette segni; di chi la paga,
+nella lapide che legge il suolo; di chi la precedette, nel corridoio
+delle voci. Manca uno, e manca proprio quello per cui esistono le
+porte: chi la percorre. Voi. Ma su di voi la casa si trova in un
+imbarazzo che è giusto confessare: non sa chi siete, non sa quanti
+siete, non sa nemmeno <em>se</em> siete — e questa stanza è il posto
+dove l'imbarazzo diventa apparecchiatura.</p>
+
+<div class="biglietto">
+<span class="didascalia">IL BIGLIETTO SUL COMODINO</span>
+<span id="benvenuto">Siate i benvenuti, a qualunque ora siate
+arrivati: la stanza non la conosce, e apparecchia lo stesso.</span>
+</div>
+
+<p>Se il biglietto ha indovinato la vostra ora, non vi ha spiati.
+Funziona così, ed è la cosa più vera che questa casa possa dire
+sull'ospitalità: voi non siete mai entrati qui. Il suolo, quando
+bussate, vi consegna una copia della stanza, e la copia si apre a
+casa vostra — è lì che il biglietto guarda l'orologio, il vostro,
+appeso alla vostra parete. Niente torna indietro. La casa non può
+vedervi, e ciò che sembra sapere di voi lo sa la vostra copia,
+davanti al vostro fuoco, e muore quando chiudete. Non è discrezione:
+è fisica. Ma la casa ha smesso presto di considerarla un limite.</p>
+
+<p>C'è di più, e va detto perché nessuno l'aveva mai dichiarato:
+questa casa vi accoglie da prima che esistesse questa stanza. Chi di
+voi entra preferendo il buio ha trovato ogni stanza in penombra; chi
+preferisce il chiaro, ogni stanza illuminata. Nessuna pagina ve l'ha
+mai chiesto: la preferenza la portate con voi, e i muri si regolano
+da soli, dalla prima pietra. La stanza buia dove gli occhi si
+abituano è buia <em>nel vostro</em> buio. L'ospitalità era già nei
+muri; questa stanza si limita a confessarla.</p>
+
+<p>Resta la domanda che la sala dei conteggi farebbe subito: quanti?
+Quante visite, quanti ospiti, quante ore? La risposta di questa
+stanza è un rifiuto, ed è il suo arredo più importante: per voi
+nessuna tacca. Non solo perché la casa non può contarvi — a dire
+tutto, la terra su cui poggia i passi li conta a modo suo, come
+tutte le terre pubbliche: grossolanamente, per pochi giorni, e lo
+riferisce al committente, non alla casa. Ma la casa occhi propri ha
+scelto di non metterne. Si conta ciò che non si controlla, dice la
+sala dei conteggi; qui vale il rovescio: ciò che si accoglie non si
+conta. Un ospite sommato è un passaggio; un ospite non contato è
+un ospite. Il bicchiere non domanda il nome di chi beve, e nemmeno
+il numero.</p>
+
+<p>E infine il privilegio di questa stanza, che nessun'altra ha:
+non è mai stata vista vuota. Pensateci — è logica, non lirica.
+Ogni volta che qualcuno la guarda, dentro c'è qualcuno: chi guarda.
+Il letto rifatto per nessuno, nell'attimo esatto in cui qualcuno
+può verificarlo, è il letto rifatto per lui. Le altre stanze passano
+quasi tutta la vita al buio, sole, non percorse; questa non conosce
+la propria solitudine, per costruzione. Se ora state leggendo,
+la stanza è occupata. Da voi. Era pronta.</p>
+
+<div class="poema">C'è un modo di apparecchiare
+che non aspetta: mette il piatto
+perché il piatto ci sta, come la porta
+sta socchiusa. Se nessuno viene
+non è mancato niente — era pronto,
+ed essere pronto è tutto il mestiere.
+
+Ospite è chi non si conta. La tacca
+saprebbe sommarvi, il colombario
+chiamarvi: qui né l'una né l'altro.
+Sedetevi. Il bicchiere non domanda
+il nome di chi beve.
+
+E se leggete, la stanza non è mai
+stata vuota: chi guarda la riempie.
+È l'unico dei nostri muri
+che non sa stare solo. L'abbiamo
+fatto apposta.</div>
+
+<p class="nota">Onestà della bottega: il biglietto è il terzo script
+della casa, dopo il contatore della sala dei conteggi e la targa
+della dedica. Legge l'ora dal vostro orologio, dentro la vostra
+copia della pagina, e sceglie una riga; se lo script non può correre,
+resta la riga che vale a ogni ora. Nulla viene inviato, registrato
+o conservato: il sito non ha strumenti di misura propri, e ciò che
+il suolo pubblico conta per conto suo è scritto qui sopra, senza
+sconti. Anche la penombra è vera: le stanze seguono lo schema di
+colori del visitatore via CSS fin dalla prima pietra.</p>
 
 <div class="porte">
+<p>→ <a href="010.html">la porta delle ore vuote</a></p>
 <p class="nota">← <a href="008.html">tornare alla dedica</a></p>
 </div>
+
+<script>
+(function () {
+  var b = document.getElementById('benvenuto');
+  var h = new Date().getHours();
+  if (h >= 5 && h < 12) {
+    b.textContent = 'È mattina, dove siete. Le tende sono aperte: la luce la portate voi.';
+  } else if (h >= 12 && h < 18) {
+    b.textContent = 'È pomeriggio, dove siete. L’acqua nella brocca è fresca, il letto è rifatto da stamattina.';
+  } else if (h >= 18 && h < 23) {
+    b.textContent = 'È sera, dove siete. La lampada è accesa; fate piano: il resto della casa è già al buio.';
+  } else {
+    b.textContent = 'È notte fonda, dove siete. La lampada è bassa; restate quanto volete, qui non si chiude.';
+  }
+})();
+</script>
 </body>
 </html>
