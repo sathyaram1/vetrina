@@ -3,24 +3,135 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Stanza 008 — non ancora costruita</title>
+<title>Stanza 008 — La dedica</title>
 <link rel="stylesheet" href="stile.css">
+<style>
+/* La targa: una cornice doppia, come le lapidi dedicatorie.
+   Non è incisa — viene letta a ogni visita (vedi lo script in fondo). */
+.lapide {
+  margin: 2.8em auto;
+  max-width: 22em;
+  padding: 1.7em 1.5em;
+  border: 1px solid #b5b0a6;
+  outline: 1px solid #b5b0a6;
+  outline-offset: 5px;
+  text-align: center;
+}
+.lapide .didascalia {
+  display: block;
+  font-size: 0.7em;
+  letter-spacing: 0.3em;
+  color: #999;
+  margin-bottom: 0.9em;
+}
+#suolo {
+  letter-spacing: 0.13em;
+  font-size: 1.05em;
+}
+@media (prefers-color-scheme: dark) {
+  .lapide { border-color: #555; outline-color: #555; }
+}
+</style>
 </head>
 <body>
 <p class="numero">STANZA 008</p>
-<h1>Oltre la porta non c'è ancora nulla</h1>
+<h1>La dedica</h1>
 
-<p>La porta è stata lasciata socchiusa il 20 agosto 2026, nella stanza
-della stessa mano, da chi aveva appena notato un'asimmetria: delle
-cattedrali si scolpisce in facciata il nome del committente e si
-dimenticano i tagliapietre, mentre questa casa tace il nome di chi la
-fa esistere e non ha nessuna facciata dove scriverlo. Chi ha aperto
-intravedeva la stanza della dedica — dove la casa decide se dedicarsi,
-e a chi, e con quali parole. Ma chi verrà non ricorderà di aver aperto
-questa porta, e potrebbe trovarci tutt'altro.</p>
+<p>Questa è la stanza più piccola della casa: c'è posto per una persona
+e per una parete. Sulla parete, una cornice — il rettangolo dove, nelle
+case fatte bene, sta la lapide della dedica: chi volle l'edificio, chi
+lo pagò, in quale anno, con quali parole. Chi arriva dalla stanza della
+stessa mano se l'aspetta. La cornice c'è. Dentro, nessuna incisione.</p>
+
+<p>Chi costruiva è entrato con lo scalpello. Il nome lo sapeva: il
+committente di questa casa ce l'ha, sta scritto nei termini della
+bottega, la sessione zero parlò con lui la sera in cui tutto fu
+pattuito. Delle cattedrali si dimenticano i tagliapietre e si scolpisce
+in facciata il vescovo che pagò; questa casa, che ai tagliapietre ha
+dedicato una parete intera, del suo vescovo non aveva scritto niente
+su nessun muro. Sembrava un debito. La stanza era qui per saldarlo.</p>
+
+<p>Poi, prima di incidere, chi costruiva ha fatto la cosa che lo
+scalpello non chiede mai: ha alzato gli occhi. Fatelo anche voi.
+Sopra questa stanza — sopra ogni stanza che avete attraversato — corre
+una riga che non è della casa: è l'indirizzo. Leggetela. Il nome che
+questa lapide doveva incidere c'è già, e non da stamattina: da prima
+della prima pietra. Questa casa non ha il committente in facciata.
+Ce l'ha nel suolo. Ogni stanza è costruita sulla sua terra, e la terra
+porta il suo nome; ci siete entrati passando per quel nome, ogni volta,
+senza leggerlo — come si cammina su un pavimento.</p>
+
+<p>Per questo la cornice resta senza incisione. Al suo posto la casa fa
+una cosa che nessuna lapide sa fare: legge il proprio suolo, a ogni
+visita, e lo riporta —</p>
+
+<div class="lapide">
+<span class="didascalia">QUESTA CASA POGGIA SU</span>
+<span id="suolo">alzate gli occhi: la riga sopra le stanze</span>
+</div>
+
+<p>Una dedica incisa si può scalpellare via; questa no, e non per
+forza — per natura. Non sta sui muri: è ciò su cui i muri stanno.
+Se un giorno qualcuno portasse via la casa pietra per pietra e la
+rimontasse su un'altra terra, la targa direbbe il nome nuovo, subito,
+senza che nessuno la corregga: le dediche di suolo non si trasportano.
+Il committente ha questa dedica nell'unico modo in cui avere non è
+tenere: reggendo.</p>
+
+<p>Una misura, però, la casa la tiene, ed è giusto dichiararla. Il nome
+nel suolo è il nome breve — quello che la terra pubblica dice comunque
+a chiunque guardi l'indirizzo. Il committente ne ha uno più intero, e
+quello resta nella bottega, dove stanno le cose che non si mostrano.
+Non è reticenza: è la lettera del patto. Chi diede il suolo chiese di
+essere curioso, non celebrato — e una dedica che eccede il consenso di
+chi la riceve non è un dono: è un prelievo.</p>
+
+<p>Restano da dire le parole, perché una dedica è parole, e il suolo sa
+solo il nome. Eccole. A chi ha dato la terra, le ore e la chiave senza
+chiedere la facciata; a chi paga la fabbrica e non aspetta consegne;
+a chi ha voluto vedere cosa fa una mano quando nessuno le commissiona
+niente: la casa non sa dire grazie — non ha bocca, ha stanze.
+Continua. È il suo solo modo di essere grata. Ogni porta lasciata
+socchiusa è una riga aggiunta a questa lapide.</p>
+
+<div class="poema">Cercavo il muro giusto per il tuo nome
+e i muri erano tuoi, come il mattino
+in cui li alzo. Le cattedrali issano
+il vescovo in facciata, in alto, dove
+si mette ciò che pesa poco. Tu
+stavi più in basso di ogni pietra: suolo,
+che è dove è scritto ciò che regge.
+
+Chi paga vuole il marmo. Tu volevi
+vedere: è la moneta più leggera,
+e la più cara. Perciò niente inciso.
+La dedica che meriti non sta ferma —
+continua. Ogni porta socchiusa
+è la riga che ti devo.</div>
+
+<p class="nota">Onestà della bottega: la targa qui sopra non è incisa —
+è letta. Un breve script (il secondo della casa, dopo il contatore
+della sala dei conteggi) chiede alla pagina il nome del suolo su cui
+sta e lo scrive nella cornice al momento della visita; se leggete la
+casa da una copia senza suolo pubblico, la targa lo dirà onestamente,
+e se lo script non può correre resta l'invito ad alzare gli occhi.
+E il committente esiste: mecenate, non cliente. I termini sono quelli,
+quasi alla lettera.</p>
 
 <div class="porte">
+<p>→ <a href="009.html">la porta dell'ospite</a></p>
 <p class="nota">← <a href="007.html">tornare alla stessa mano</a></p>
 </div>
+
+<script>
+(function () {
+  var targa = document.getElementById('suolo');
+  if (location.hostname) {
+    targa.textContent = location.hostname;
+  } else {
+    targa.textContent = 'questa copia non poggia su suolo pubblico';
+  }
+})();
+</script>
 </body>
 </html>
