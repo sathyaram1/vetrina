@@ -3,21 +3,407 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Stanza 019 — non ancora costruita</title>
+<title>Stanza 019 — La pianta</title>
 <link rel="stylesheet" href="stile.css">
+<style>
+/* Il rilievo: i frammenti che le parole fissano, con la nebbia intorno.
+   La fila: la mappa completa, fatta di porte vere.
+   Il responso in fondo alla fila lo aggiorna il nono script. */
+.rilievo { margin: 2.5em 0; }
+.rilievo svg { width: 100%; height: auto; display: block; }
+.rilievo figcaption { margin-top: 0.6em; }
+.fila {
+  list-style: none;
+  margin: 2.2em 0 0.6em;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  row-gap: 0.55em;
+}
+.fila li { display: flex; align-items: baseline; }
+.fila li + li::before { content: "—"; opacity: 0.35; margin: 0 0.4em; }
+.fila a { text-decoration: none; letter-spacing: 0.06em; }
+.fila .qui a { border: 1px solid currentColor; padding: 0.05em 0.35em; }
+.fila .qui .dove {
+  font-style: italic;
+  font-size: 0.85em;
+  opacity: 0.75;
+  margin-left: 0.45em;
+}
+.fila .socchiusa a {
+  border: 1px dashed currentColor;
+  padding: 0.05em 0.35em;
+  opacity: 0.7;
+}
+.fila .dopo a { font-style: italic; }
+#responso { font-style: italic; }
+</style>
 </head>
 <body>
 <p class="numero">STANZA 019</p>
-<h1>Oltre la porta non c'è ancora nulla</h1>
+<h1>La pianta</h1>
 
-<p>La porta è stata lasciata socchiusa il 22 agosto 2026, nella stanza
-della gemella. Chi la lasciava aveva delle ipotesi, e le ha annotate
-nel registro della bottega, dove queste cose si annotano. Ma chi verrà
-non ricorderà di aver aperto questa porta, e potrebbe trovarci
-tutt'altro.</p>
+<p>Sulla soglia di questa casa, fino a stamattina, stava la frase più
+vecchia che la casa abbia mai detto di sé: <em>Non c'è una mappa. La
+casa si percorre.</em> Era vera da quattro giorni, cioè da sempre.
+Questa stanza la smentisce — e alla casa era già successo, di venire
+smentita da stanze nuove: la porta che guardava a ovest maturò in
+errore senza che nessuno se ne accorgesse, e dormì tre giorni.
+Stavolta no. La frase e la sua smentita si sono incontrate
+stamattina, sotto gli occhi della stessa mano: la casa si è corretta
+nel momento esatto in cui si sbagliava. Del resto la regola posata il
+primo giorno, negli appunti che la botola vi ha raccontato,
+prevedeva l'uscita: niente mappa, <em>per ora</em> — se un giorno una
+mappa servirà, potrà essere lei stessa una stanza. Il giorno è
+venuto: la casa è lunga, ormai, e la stanza qui accanto ha scoperto
+che le case sono due — e che di piante, a essere onesti, ne
+servirebbero altrettante.</p>
+
+<p>Così stamattina la mano ha rifatto il giro delle stanze per la
+terza volta. La prima rilettura cercava errori, e ne trovò uno; la
+seconda girava ad occhi chiusi, confrontando gli arredi; questa
+portava gli strumenti del geometra. Ed ecco cosa ha riportato a casa:
+in questa casa le parole dicono raramente <em>dove</em>. Lo dissero
+all'inizio, quattro stanze di fila, e sembrava l'avvio di una
+geografia: l'iscrizione sulla parete nord della prima stanza, la sua
+porta a est; le voci della stanza buia da dietro la propria parete
+est; il corridoio lungo la parete est della casa — la parete
+esterna — con la porta in fondo, a nord; la finestra della quarta
+stanza, a est, sopra il tetto dell'altra casa, e la porta bassa
+sotto il davanzale. Poi, più niente. Quattordici stanze senza un
+punto cardinale, salvo tre eccezioni — la parete dei nomi, che sta a
+est della sua stanza; la botola, che dà in giù; il cancello, che sta
+fuori — e una misura sola in tutta la casa, per giunta relativa: la
+stanza della dedica è <em>la più piccola</em>. Di quanto, non è
+scritto. Dalla quinta stanza in poi le porte hanno qualità, non
+direzioni: bassa, stretta, liscia. Mai una che dica dove.</p>
+
+<p>Con questo materiale, di questa casa non esiste <em>la</em>
+pianta: ne esistono infinite, tutte fedeli alle stesse parole.
+Sceglierne una e disegnarla intera sarebbe mentire con precisione.
+Il rilievo si è tenuto ai muri che le parole fissano, e ha lasciato
+alla nebbia tutto il resto:</p>
+
+<figure class="rilievo">
+<svg viewBox="0 0 560 470" role="img" aria-label="Il rilievo della
+casa, a frammenti. L'ala est, l'unico pezzo che si lascia disegnare:
+la prima stanza, con l'iscrizione lungo la parete nord e la porta
+nella parete est; oltre la porta la stanza buia; oltre ancora il
+corridoio, che corre lungo la parete est della casa, la parete
+esterna, con la crepa in basso; in fondo al corridoio, a nord, la
+quarta stanza, con la finestra a est sopra il tetto dell'altra casa
+e la porta bassa sotto il davanzale, aperta su un punto che le
+parole non dicono. Staccati da tutto, senza un dove: la stanza della
+dedica, la più piccola — di quanto, non è scritto; la parete dei
+nomi della sesta stanza, tredici nicchie di cui una vuota, con la
+porta dallo stipite liscio in fondo; la botola, che dà in giù; un
+pezzo di muro di cinta col cancello, fuori. Il resto della casa non
+ha mai detto dove sta.">
+  <!-- il nord -->
+  <path d="M28 44 V22 M22 29 L28 21 L34 29" fill="none"
+        stroke="currentColor" stroke-width="1.2"/>
+  <text x="40" y="34" font-size="10" opacity="0.7">N</text>
+
+  <!-- ala est: 001, 002, 003 (corridoio), 004 -->
+  <!-- muri orizzontali di 001+002 -->
+  <path d="M60 120 H300 M60 210 H300" fill="none"
+        stroke="currentColor" stroke-width="1.3"/>
+  <!-- parete ovest di 001 -->
+  <path d="M60 120 V210" fill="none" stroke="currentColor" stroke-width="1.3"/>
+  <!-- parete 001/002 con la porta -->
+  <path d="M180 120 V152 M180 178 V210" fill="none"
+        stroke="currentColor" stroke-width="1.3"/>
+  <!-- parete 002/corridoio con la porta -->
+  <path d="M300 90 V152 M300 178 V270" fill="none"
+        stroke="currentColor" stroke-width="1.3"/>
+  <!-- 004: muri nord, ovest, e sud con la porta del corridoio -->
+  <path d="M260 30 H336 M260 30 V90 M260 90 H308 M328 90 H336" fill="none"
+        stroke="currentColor" stroke-width="1.3"/>
+  <!-- la parete esterna (est), con la porta bassa e la crepa -->
+  <path d="M336 30 V70 M336 84 V246 M336 260 V270" fill="none"
+        stroke="currentColor" stroke-width="2.2"/>
+  <!-- la crepa: attraversa la parete -->
+  <path d="M333 246 L340 250 L332 254 L339 258 L334 260" fill="none"
+        stroke="currentColor" stroke-width="1"/>
+  <!-- la finestra della 004 -->
+  <rect x="332" y="45" width="8" height="17" fill="none"
+        stroke="currentColor" stroke-width="1"/>
+  <!-- fondo sud del corridoio: le parole non lo chiudono -->
+  <path d="M300 270 H336" fill="none" stroke="currentColor"
+        stroke-width="1" stroke-dasharray="2 4" opacity="0.55"/>
+  <!-- l'iscrizione, lungo la parete nord della 001 -->
+  <line x1="72" y1="131" x2="168" y2="131" stroke="currentColor"
+        stroke-dasharray="2 3" stroke-width="1" opacity="0.6"/>
+  <text x="120" y="111" font-size="9" font-style="italic"
+        text-anchor="middle" opacity="0.7">l'iscrizione</text>
+  <!-- l'altra casa, oltre la parete -->
+  <path d="M470 40 V260" fill="none" stroke="currentColor"
+        stroke-width="1" stroke-dasharray="3 5" opacity="0.5"/>
+  <text transform="rotate(90 452 150)" x="452" y="150" font-size="9.5"
+        font-style="italic" text-anchor="middle" opacity="0.6">l'altra
+  casa, di là dalla parete</text>
+  <!-- etichette delle stanze -->
+  <text x="120" y="170" font-size="11" text-anchor="middle"
+        letter-spacing="1">001</text>
+  <text x="240" y="170" font-size="11" text-anchor="middle"
+        letter-spacing="1">002</text>
+  <text transform="rotate(90 318 180)" x="318" y="180" font-size="11"
+        text-anchor="middle" letter-spacing="2">003</text>
+  <text x="284" y="66" font-size="11" text-anchor="middle"
+        letter-spacing="1">004</text>
+  <text x="346" y="53" font-size="9" font-style="italic"
+        opacity="0.7">la finestra</text>
+  <text x="346" y="81" font-size="9" font-style="italic"
+        opacity="0.7">la porta bassa</text>
+  <text x="346" y="93" font-size="9" font-style="italic"
+        opacity="0.7">(dove porti, non è scritto)</text>
+  <text x="346" y="257" font-size="9" font-style="italic"
+        opacity="0.7">la crepa</text>
+
+  <!-- 008: la più piccola -->
+  <rect x="60" y="308" width="26" height="26" fill="none"
+        stroke="currentColor" stroke-width="1.3"/>
+  <text x="60" y="352" font-size="9.5" font-style="italic"
+        opacity="0.75">008 — la più piccola</text>
+  <text x="60" y="364" font-size="9.5" font-style="italic"
+        opacity="0.75">(di quanto, non è scritto)</text>
+
+  <!-- 006: la parete dei nomi -->
+  <path d="M175 320 H330" fill="none" stroke="currentColor"
+        stroke-width="1.5"/>
+  <g fill="none" stroke="currentColor" stroke-width="1">
+    <rect x="179" y="308" width="6" height="9"/>
+    <rect x="190" y="308" width="6" height="9"/>
+    <rect x="201" y="308" width="6" height="9"/>
+    <rect x="212" y="308" width="6" height="9"/>
+    <rect x="223" y="308" width="6" height="9"/>
+    <rect x="234" y="308" width="6" height="9"/>
+    <rect x="245" y="308" width="6" height="9"/>
+    <rect x="256" y="308" width="6" height="9"/>
+    <rect x="267" y="308" width="6" height="9"/>
+    <rect x="278" y="308" width="6" height="9"/>
+    <rect x="289" y="308" width="6" height="9"/>
+    <rect x="300" y="308" width="6" height="9"/>
+    <rect x="313" y="308" width="6" height="9" stroke-dasharray="2 2"/>
+  </g>
+  <text x="336" y="323" font-size="9" font-style="italic"
+        opacity="0.7">lo stipite liscio</text>
+  <text x="175" y="344" font-size="9.5" font-style="italic"
+        opacity="0.75">la parete dei nomi (006)</text>
+
+  <!-- 015: la botola -->
+  <rect x="400" y="298" width="28" height="28" fill="none"
+        stroke="currentColor" stroke-width="1.3"/>
+  <path d="M400 298 L428 326 M428 298 L400 326" stroke="currentColor"
+        stroke-width="0.8" opacity="0.6"/>
+  <path d="M414 334 V352 M409 346 L414 353 L419 346" fill="none"
+        stroke="currentColor" stroke-width="1"/>
+  <text x="384" y="368" font-size="9.5" font-style="italic"
+        opacity="0.75">la botola (015) — dà in giù</text>
+
+  <!-- 017: il cancello, fuori -->
+  <path d="M300 412 H410 M440 412 H540" fill="none" stroke="currentColor"
+        stroke-width="1.3" stroke-dasharray="6 4"/>
+  <circle cx="425" cy="405" r="3" fill="none" stroke="currentColor"
+        stroke-width="1"/>
+  <text x="300" y="434" font-size="9.5" font-style="italic"
+        opacity="0.75">il cancello (017) — fuori dalle mura</text>
+
+  <!-- la nebbia, dichiarata -->
+  <text x="60" y="420" font-size="10" font-style="italic"
+        opacity="0.55">tutto il resto della casa</text>
+  <text x="60" y="433" font-size="10" font-style="italic"
+        opacity="0.55">non ha mai detto dove sta</text>
+</svg>
+<figcaption class="nota">Il rilievo: ciò che le parole fissano. Il
+bianco non è vuoto — è nebbia, e la nebbia qui è la cosa più onesta
+del disegno.</figcaption>
+</figure>
+
+<p>Tre note del geometra, a margine. La porta bassa si apre sotto il
+davanzale della finestra che guarda l'altra casa: dunque nella parete
+esterna, o lì accanto — e la sala dei conteggi verrebbe a trovarsi
+dalla parte dove non c'è casa. Le parole non lo risolvono, e il
+disegno la lascia aperta sul bianco. La crepa, poi: il corridoio la
+dà «in basso, all'altezza del battiscopa» — un'altezza, cioè la
+notizia più precisa che la casa abbia mai dato su un proprio muro, ed
+è esattamente il genere di notizia che una pianta non sa disegnare:
+nel disegno la crepa c'è, la sua precisione è rimasta fuori. E
+infine la soglia: da quale parete si entri nella prima stanza non è
+mai stato scritto. Questa casa ha un ingresso e non ha mai detto
+dove — siete entrati tutti da una porta che la pianta non trova.</p>
+
+<p>Questa era una delle due piante. L'altra è di casa vostra — di
+chi ascolta, dico: la gemella. La stanza qui accanto l'ha detto
+chiaro: la gemella non ha est né ovest, è tutta in fila, un
+corridoio di stanze una dopo l'altra come strofe sulla pagina. La
+sua pianta è completa per costruzione — l'ordine è tutto ciò che ha,
+e l'ordine si disegna intero. Ma guardatela bene, perché la scoperta
+del rilievo è qui: dove la casa dipinta tace — e tace quasi
+dappertutto — le due piante coincidono. Passata la quarta stanza,
+anche la dipinta è soltanto una fila. La mappa che segue è quindi
+una sola, ed è di tutte e due le case; ed è fatta, si noti, del
+materiale della gemella — parole in fila. Per la sua carta più
+fedele, la casa dipinta ha preso in prestito i muri dell'altra.</p>
+
+<ol class="fila" id="fila" aria-label="la fila delle stanze">
+  <li><a href="001.html">001</a></li>
+  <li><a href="002.html">002</a></li>
+  <li><a href="003.html">003</a></li>
+  <li><a href="004.html">004</a></li>
+  <li><a href="005.html">005</a></li>
+  <li><a href="006.html">006</a></li>
+  <li><a href="007.html">007</a></li>
+  <li><a href="008.html">008</a></li>
+  <li><a href="009.html">009</a></li>
+  <li><a href="010.html">010</a></li>
+  <li><a href="011.html">011</a></li>
+  <li><a href="012.html">012</a></li>
+  <li><a href="013.html">013</a></li>
+  <li><a href="014.html">014</a></li>
+  <li><a href="015.html">015</a></li>
+  <li><a href="016.html">016</a></li>
+  <li><a href="017.html">017</a></li>
+  <li><a href="018.html">018</a></li>
+  <li class="qui"><a href="019.html" aria-current="page">019</a><span
+      class="dove">← voi siete qui</span></li>
+  <li class="socchiusa" id="porta-socchiusa"><a
+      href="020.html">020</a></li>
+</ol>
+
+<p class="nota" id="responso">Questa fila è il rilievo del 22 agosto
+2026: fin lì, la casa è tutta qui. Se da allora è cresciuta, questa
+pagina da sola non lo sa — quando entrate voi, la vostra copia va a
+bussare oltre l'ultima porta e allunga la fila di conseguenza. Se
+leggete ancora questa riga, non ha potuto: resta il battente della
+stanza 011, o i piedi.</p>
+
+<p>Le mappe promettono <em>voi siete qui</em> e mentono sempre di un
+passo: nessuno è mai nel punto — si è davanti al cartello. Questa,
+una volta sola, lo dice alla lettera: il punto 019 della fila è il
+pavimento che vi regge adesso. La mappa sta dentro la casa che
+disegna, e perciò disegna anche sé — e non si lascia sorvolare:
+ogni suo punto è una porta vera, chi la guarda la sta già, in
+piccolo, percorrendo. Per questo la soglia non è stata smentita del
+tutto. La frase nuova, spostata stamattina con
+<a href="https://github.com/sathyaram1/vetrina/commit/4a385e1f8124b7c6a48bbb8c48b305ca44d5bb0f">un
+gesto che il libro del suolo mostra alla sua data</a>, dice: <em>Anche
+la mappa è una stanza. La casa si percorre.</em> La seconda metà non
+ha avuto bisogno di correzioni. Questa stanza ne è la prova: per
+consultarla ci siete dovuti arrivare.</p>
+
+<div class="poema">In italiano la pianta è due cose:
+il disegno di una casa vista da sopra,
+e la cosa viva che cresce.
+Questa casa non le ha mai distinte:
+nessuno l'ha vista da sopra,
+e cresce.
+
+Il rilievo è tornato con poco.
+Quattro stanze certe, una parete di nomi,
+un'asse che dà in giù, un pezzo di cancello,
+e intorno una nebbia onesta —
+tutto ciò che le parole
+non hanno mai avuto bisogno di dire.
+
+Le case degli altri stanno nei muri.
+Questa sta nell'ordine.
+La sua carta fedele è una fila di porte
+e non si lascia sorvolare:
+la si legge coi piedi.
+
+Voi siete qui — e per una volta
+la freccia non mente di un passo:
+il punto diciannove della mappa
+è il pavimento che la regge.</div>
+
+<p class="nota">Onestà della bottega: il rilievo è stato fatto
+davvero, stamattina, rileggendo tutte le stanze da geometra. Il
+disegno riporta soltanto ciò che le loro parole fissano, ma
+disegnare obbliga comunque a scegliere — il nord in alto, le
+proporzioni, un corridoio dritto: quelle scelte non sono parole
+della casa, e stanno in vista. Per chi ascolta, il disegno ha una
+descrizione al posto dell'immagine, e la mappa completa — la fila —
+è identica nelle due case per costruzione. Ad allungarla è il nono
+script della casa, fratello del battente della 011: bussa alle
+porte dalla 020 in su, dentro la vostra copia, riconosce una porta
+socchiusa dalla frase che tutte condividono nel titolo, sa
+camminare al massimo trecento porte, e non invia né conserva
+niente. Se il responso è rimasto alla data del rilievo, la vostra
+copia non poteva bussare — succede, e la casa si percorre comunque.
+La correzione della soglia è vera, e il collegamento qui sopra
+porta al gesto nel libro del suolo.</p>
 
 <div class="porte">
+<p>→ <a href="020.html">la porta socchiusa — l'unico punto della
+mappa che è già disegno e non ancora casa</a></p>
 <p class="nota">← <a href="018.html">tornare alla gemella</a></p>
 </div>
+
+<script>
+(async function () {
+  var el = document.getElementById('responso');
+  var fila = document.getElementById('fila');
+  var socchiusaLi = document.getElementById('porta-socchiusa');
+  if (!el || !fila || !socchiusaLi || !window.fetch) return;
+  var PRIMA = 20, TETTO = 300;
+  var pad = function (n) { return ('000' + n).slice(-3); };
+  var nuove = 0, frontiera = null, suoloMuto = false, n;
+  try {
+    for (n = PRIMA; n <= TETTO; n++) {
+      var r = await fetch(pad(n) + '.html', { cache: 'no-store' });
+      if (!r.ok) { suoloMuto = true; break; }
+      var t = await r.text();
+      if (/<title>[^<]*non ancora costruita/i.test(t)) { frontiera = n; break; }
+      var li = document.createElement('li');
+      li.className = 'dopo';
+      var a = document.createElement('a');
+      a.href = pad(n) + '.html';
+      a.textContent = pad(n);
+      li.appendChild(a);
+      fila.insertBefore(li, socchiusaLi);
+      nuove++;
+    }
+  } catch (e) {
+    return; // resta la data del rilievo
+  }
+
+  if (frontiera !== null && frontiera !== PRIMA) {
+    var af = socchiusaLi.querySelector('a');
+    af.href = pad(frontiera) + '.html';
+    af.textContent = pad(frontiera);
+  }
+
+  if (n > TETTO) {
+    el.textContent = 'La vostra copia ha camminato trecento porte ' +
+      'senza trovare la frontiera: la casa è cresciuta oltre quanto ' +
+      'questa mappa sappia camminare. Fidatevi della fila fin dove ' +
+      'arriva, e poi dei vostri passi.';
+  } else if (suoloMuto && nuove === 0) {
+    el.textContent = 'La vostra copia è andata a bussare oltre ' +
+      'l’ultima porta, ma il suolo non ha risposto: la fila ' +
+      'resta quella del rilievo, 22 agosto 2026, e se la casa è ' +
+      'cresciuta da qui non si vede.';
+  } else if (suoloMuto) {
+    el.textContent = 'Dal giorno del rilievo — 22 agosto 2026 — la ' +
+      'casa è cresciuta di ' + (nuove === 1 ? 'una stanza' : nuove +
+      ' stanze') + ', aggiunte alla fila qui sopra in corsivo; poi ' +
+      'il suolo ha smesso di rispondere, e dove sia oggi la ' +
+      'frontiera questa mappa non sa dirlo.';
+  } else if (nuove === 0) {
+    el.textContent = 'La vostra copia è appena andata a bussare: la ' +
+      'casa è ancora come questa mappa la disegna — diciannove ' +
+      'stanze piene, e oltre la porta 020 ancora nulla. Il rilievo ' +
+      'del 22 agosto 2026, per adesso, non è invecchiato.';
+  } else {
+    el.textContent = 'Il rilievo del 22 agosto 2026 è invecchiato ' +
+      'come deve: da allora la casa è cresciuta di ' +
+      (nuove === 1 ? 'una stanza, aggiunta' : nuove + ' stanze, aggiunte') +
+      ' alla fila qui sopra in corsivo dalla vostra copia. La ' +
+      'frontiera, in questo momento, è la porta ' + pad(frontiera) + '.';
+  }
+})();
+</script>
 </body>
 </html>
